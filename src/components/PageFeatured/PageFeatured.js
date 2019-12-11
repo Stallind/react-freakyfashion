@@ -1,11 +1,11 @@
 import React from 'react';
-import { MDBCol, MDBContainer, MDBRow, MDBNavItem} from "mdbreact";
+import { MDBCol, MDBContainer, MDBRow } from "mdbreact";
 
 
 const PageFeatured = () => {
 
     return (
-        <MDBContainer fluid className="text-center block mt-5">
+        <MDBContainer fluid className="text-center block mt-5 pb-5">
             <MDBRow className="justify-content-center">
                 <MDBCol md="2" >
                     <img src="https://via.placeholder.com/300x200?text=Product" alt="logo" className="z-depth-2"/>

@@ -6,7 +6,7 @@ import '../PageFooter/PageFooter.css'
 const PageFooter = () => {
 
     return ( //fixed-bottom
-        <MDBFooter className=" font-small pt-4 mt-4 blue-grey-text font-weight-bold">
+        <MDBFooter className=" font-small pt-4 mt-4 blue-grey-text font-weight-bold mt-5 bg-light">
         <MDBContainer fluid className="text-center text-md-left">
             <MDBRow>
                 <MDBCol md="12" className="text-center">

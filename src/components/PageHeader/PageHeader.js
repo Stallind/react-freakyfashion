@@ -9,8 +9,7 @@ const PageHeader = () => {
         <Router>
         <MDBNavbar color="white" className="blue-grey-text" expand="md">
         <MDBNavbarBrand>
-          <strong className="">Navbar</strong>
-          <img src="https://via.placeholder.com/120x60?text=Freaky+Fashion.com" alt="Freaky fashion logo"/>
+          <img src="https://via.placeholder.com/220x60?text=Freaky+Fashion.com" alt="Freaky fashion logo"/>
         </MDBNavbarBrand>
           <MDBNavbarNav left>
             <MDBNavItem active>
