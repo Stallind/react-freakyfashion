@@ -14,7 +14,8 @@ const products = [{
 const PageRecommended = () => {
 
     return (
-        <MDBContainer fluid className="text-center block mt-5 pb-5">
+        <MDBContainer fluid className="text-center block mt-5 pt-5 pb-5">
+            <p className="text-center font-weight-bolder">Rekommenderas för dig</p>
             <MDBRow className="justify-content-center mt-5">
                 <MDBCol md="3"></MDBCol>
 
