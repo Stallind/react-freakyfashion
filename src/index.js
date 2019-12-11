@@ -46,6 +46,29 @@ const pageData = {
         text: "Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet",
         img: "https://via.placeholder.com/468x300?text=Product",
         altText: "product"
+    }],
+
+    products:[{
+        name: "White leather jacket",
+        img: "https://via.placeholder.com/300x200?text=Featured+Product",
+        articleNumber: "1234-000000456-789",
+        text: "Detta är en fin produkt som luktar friterad snus om du har på dig den efter 10.00 på lördagar.",
+        price: 4999
+    },
+    {
+        name: "Black jacket",
+        img: "https://via.placeholder.com/300x200?text=Featured+Product",
+        articleNumber: "1234-456-789"
+    },  
+    { 
+        name: "Green trenchcoat",
+        img: "https://via.placeholder.com/300x200?text=Featured+Product",
+        articleNumber: "1234-456-789"
+    },
+    {
+        name: "Blue jeans",
+        img: "https://via.placeholder.com/300x200?text=Featured+Product",
+        articleNumber: "1234-456-789"
     }]
 }
 

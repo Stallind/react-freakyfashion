@@ -16,18 +16,17 @@ function App({pageData}) {
         <Switch>
         <Route exact path="/">
           <PageHero heroContent={pageData.hero}/>
-          <PageFeatured />
+          <PageFeatured products={pageData.products}/>
           <PageRecommended />
         </Route>
 
         <Route path="/detail">
-          <PageDetail />
+          <PageDetail products={pageData.products}/>
           <PageRecommended />
         </Route>
         </Switch>
         <PageFooter />
       </Router>
-    
     </div>
   );
 }

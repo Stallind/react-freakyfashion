@@ -1,24 +1,8 @@
 import React from 'react';
 import { MDBCol, MDBContainer, MDBRow } from "mdbreact";
 
-const products = [{
-        name: "White leather jacket",
-        img: "https://via.placeholder.com/300x200?text=Featured+Product"
-    },
-    {
-        name: "Black jacket",
-        img: "https://via.placeholder.com/300x200?text=Featured+Product"
-    },  
-    { 
-        name: "Green trenchcoat",
-        img: "https://via.placeholder.com/300x200?text=Featured+Product"
-    },
-    {
-        name: "Blue jeans",
-        img: "https://via.placeholder.com/300x200?text=Featured+Product"
-}];
 
-const PageFeatured = () => {
+const PageFeatured = ({products}) => {
 
     return (
         <MDBContainer fluid className="text-center block mt-5 pb-5">
