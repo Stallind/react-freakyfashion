@@ -7,7 +7,7 @@ const PageHeader = () => {
 
     return (
         <Router>
-        <MDBNavbar color="white" light expand="md">
+        <MDBNavbar color="white" className="blue-grey-text" expand="md">
         <MDBNavbarBrand>
           <strong className="">Navbar</strong>
           <img src="https://via.placeholder.com/120x60?text=Freaky+Fashion.com" alt="Freaky fashion logo"/>

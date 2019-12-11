@@ -5,3 +5,12 @@
 .btn {
     box-shadow: none !important; 
 }
+
+.navbar .nav-item .nav-link{
+    color:#607d8b !important;
+    
+}
+
+.navbar .nav-item .nav-link:hover{
+    color:black !important;  
+}
