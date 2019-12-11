@@ -3,19 +3,19 @@ import { MDBCol, MDBContainer, MDBRow } from "mdbreact";
 
 const products = [{
         name: "White leather jacket",
-        img: "https://via.placeholder.com/300x200?text=Product"
+        img: "https://via.placeholder.com/300x200?text=Featured+Product"
     },
     {
         name: "Black jacket",
-        img: "https://via.placeholder.com/300x200?text=Product"
+        img: "https://via.placeholder.com/300x200?text=Featured+Product"
     },  
     { 
         name: "Green trenchcoat",
-        img: "https://via.placeholder.com/300x200?text=Product"
+        img: "https://via.placeholder.com/300x200?text=Featured+Product"
     },
     {
         name: "Blue jeans",
-        img: "https://via.placeholder.com/300x200?text=Product"
+        img: "https://via.placeholder.com/300x200?text=Featured+Product"
 }];
 
 const PageFeatured = () => {
@@ -32,16 +32,6 @@ const PageFeatured = () => {
 
                 ))}
 
-            </MDBRow>
-            <MDBRow className="justify-content-center mt-5">
-                <MDBCol md="3"></MDBCol>
-                    <MDBCol md="3" >
-                        <img src="https://via.placeholder.com/468x300?text=Product" alt="logo" className="z-depth-1"/>
-                    </MDBCol>
-                    <MDBCol md="3" >
-                        <img src="https://via.placeholder.com/468x300?text=Product" alt="logo" className="z-depth-1"/>   
-                    </MDBCol>
-                <MDBCol md="3"></MDBCol>
             </MDBRow>
         </MDBContainer>
     )
