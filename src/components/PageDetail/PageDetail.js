@@ -20,7 +20,7 @@ const PageDetail = () => {
 
 
     return (
-        <MDBContainer fluid className="text-center justify-content-center block mt-2 mb-3 bg-light">
+        <MDBContainer fluid className="text-center justify-content-center block mt-2 mb-3 bg-light pb-5">
         <MDBRow>
             
       

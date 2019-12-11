@@ -5,7 +5,7 @@ import { MDBCol, MDBContainer, MDBRow} from "mdbreact";
 const PageHero = ({heroContent}) => {
     
     return (
-        <MDBContainer fluid className="text-center justify-content-center block mt-2 mb-3 bg-light">
+        <MDBContainer fluid className="text-center justify-content-center block mt-2 mb-3 bg-light p-5">
             <MDBRow>
                 <MDBCol md="3" ></MDBCol>
 
