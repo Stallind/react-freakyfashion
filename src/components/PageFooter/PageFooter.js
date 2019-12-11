@@ -1,7 +1,45 @@
-import React, {useState} from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import React from 'react';
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import '../PageFooter/PageFooter.css'
+
+const shoppingLinks = [{
+    name: "Vinterjackor",
+    url: "#"
+},
+{
+    name: "Kappa",
+    url: "#"
+},
+{
+    name: "Trenchcoats",
+    url: "#"
+},
+{
+    name: "Pufferjackor",
+    url: "#"
+}];
+
+const myPagesLinks = [{
+        name: "Mina Ordrar",
+        url: "#"
+    },
+    {
+        name: "Mitt Konto",
+        url: "#"
+    }
+];
+
+const customerServiceLinks = [{
+    name: "Returnpolicy",
+    url: "#" 
+},
+{
+name: "Interitetspolicy",
+    url: "#"
+}
+];
+
+
 
 const PageFooter = () => {
 
@@ -20,34 +58,31 @@ const PageFooter = () => {
                 <MDBCol md="3">
                     <h5 className="title">Shopping</h5>
                     <ul className="list-unstyled">
-                    <li>
-                        <p><a href="#!">Link 1</a></p>
-                    </li>
-                    <li>
-                        <a href="#!">Link 2</a>
-                    </li>
+                        {shoppingLinks.map(link => (
+                            <li key={link.name}>
+                                <a href={link.url}>{link.name}</a>
+                            </li>
+                        ))}
                     </ul>
                 </MDBCol>
                 <MDBCol md="3">
                     <h5 className="title">Mina sidor</h5>
                     <ul className="list-unstyled">
-                    <li>
-                        <a href="#!">Link 1</a>
-                    </li>
-                    <li>
-                        <a href="#!">Link 2</a>
-                    </li>
+                    {myPagesLinks.map(link => (
+                            <li key={link.name}>
+                                <a href={link.url}>{link.name}</a>
+                            </li>
+                        ))}
                     </ul>
                 </MDBCol>
                 <MDBCol md="3">
                     <h5 className="title">Kundtjänst</h5>
                     <ul className="list-unstyled">
-                    <li>
-                        <a href="#!">Link 1</a>
-                    </li>
-                    <li>
-                        <a href="#!">Link 2</a>
-                    </li>
+                    {customerServiceLinks.map(link => (
+                            <li key={link.name}>
+                                <a href={link.url}>{link.name}</a>
+                            </li>
+                        ))}
                     </ul>
                 </MDBCol>
                 <MDBCol md="3">

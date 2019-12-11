@@ -5,11 +5,11 @@ import PageHero from './components/PageHero/PageHero';
 import PageFeatured from './components/PageFeatured/PageFeatured';
 
 
-function App() {
+function App({pageData}) {
   return (
     <div className="App">
-      <PageHeader />
-      <PageHero />
+      <PageHeader headerContent={pageData.header}/>
+      <PageHero heroContent={pageData.hero}/>
       <PageFeatured />
       <PageFooter />
     </div>

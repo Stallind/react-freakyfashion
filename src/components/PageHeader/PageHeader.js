@@ -3,8 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink } from "mdbreact";
 import '../PageHeader/PageHeader.css'
 
-const PageHeader = () => {
-
+const PageHeader = ({headerContent}) => {
     return (
         <Router>
         <MDBNavbar color="white" className="blue-grey-text" expand="md">
@@ -43,14 +42,16 @@ const PageHeader = () => {
 
       </MDBNavbar>
       <MDBNavbar color="white" light expand="md">
-      <MDBNavbarNav left>
-            <MDBNavItem active>
-              <MDBNavLink to="#!">Home</MDBNavLink>
+        <MDBNavbarNav left>
+            
+          {headerContent.map(link => (
+            <MDBNavItem key={link.linkName}>
+              <MDBNavLink to={link.linkUrl}>{link.linkName}
+              </MDBNavLink>
             </MDBNavItem>
-            <MDBNavItem>
-              <MDBNavLink to="#!">Features</MDBNavLink>
-            </MDBNavItem>
-          </MDBNavbarNav>
+          ))}
+
+        </MDBNavbarNav>
       </MDBNavbar>
     </Router>
 
